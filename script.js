@@ -1,12 +1,3 @@
-function validação(user, senha){
-    return user === 'Pedro' && senha == 1234
-    }
+const nome_completo = (sob) => 'Tiago ' + sob
 
-let acesso = validação('Pedro', 1234)
-
-
-if (acesso){
-    console.log('acesso garantido')
-} else {
-    console.log('acesso negado')
-}
+console.log(nome_completo('Oliveira'))
