@@ -1,25 +1,12 @@
-function calc_casa(metragem, quartos){
-    
-    let m2 = 3000;
-    let valor_inicial = metragem * m2;
-    let valor_final = 0
-
-    switch(quartos){
-        case 1:
-            default:
-            valor_final = valor_inicial;
-            break;
-        case 2:
-            valor_final = valor_inicial * 1.2;
-            break;
-        case 3:
-            valor_final = valor_inicial * 1.5;
-            break;
+function validação(user, senha){
+    return user === 'Pedro' && senha == 1234
     }
-    return valor_final
+
+let acesso = validação('Pedro', 1234)
+
+
+if (acesso){
+    console.log('acesso garantido')
+} else {
+    console.log('acesso negado')
 }
-
-let valor = calc_casa(123, 3)
-
-console.log(`A casa custa ${valor}`)
-
