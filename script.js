@@ -1,30 +1,17 @@
-/* primeira versão com função anonima
-let pessoa = {
-    nome: 'Tiago',
-    sobrenome: 'Oliveira',
-    idade: 90,
-    nomeCompleto : () => {
-        completo = `${nome} ${sobrenome}`
-        return completo
-    }
-}*/
+let cores = ['azul', 'preto', 'verde']
 
 
-//----------------------------------------------------
-
-/* segunda versão com 'this'
-console.log(pessoa.nomeCompleto(pessoa.nome, pessoa.sobrenome))
-
-let pessoa = {
-    nome: 'Tiago',
-    sobrenome: 'Oliveira',
-    idade: 90,
-    nomeCompleto: function(){
-        return `${this.nome} ${this.sobrenome}`
-    }
+//versão com length
+for (i = 0; i < cores.length; i++){
+    console.log(cores[i])
 }
 
-//"this" refere-se ao próprio objeto
+//versão com in
+for(let i in cores) {
+    console.log(cores[i])
+}
 
-console.log(pessoa.nomeCompleto())
-*/
+//versão com of
+for(let cor of cores){
+    console.log(cor)
+}
